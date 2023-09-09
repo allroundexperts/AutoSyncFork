@@ -1,0 +1,25 @@
+{
+  "name": "auto-sync-fork",
+  "version": "1.0.0",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "NODE_ENV=dev webpack -w",
+    "local": "NODE_ENV=local webpack -w"
+  },
+  "repository": "https://github.com/allroundexperts/AutoSyncFork.git",
+  "author": "Sibtain Ali <allroundexperts@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@allroundexperts/run-node-webpack-plugin": "^1.0.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "octokit": "^3.1.0",
+    "whatwg-fetch": "^3.6.18"
+  }
+}
